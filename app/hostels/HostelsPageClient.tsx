@@ -436,26 +436,9 @@ export default function HostelsPageClient() {
       </div>
 
       <section id="hostels-list" className="relative px-4 py-12 md:px-8">
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute top-3 right-0 h-36 w-32 bg-cover bg-center opacity-75 sm:h-48 sm:w-44"
-          style={{
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1598880940080-ff9a29891b85?auto=format&fit=crop&w=500&q=80)",
-          }}
-        />
+      
 
         <div className="mx-auto w-full max-w-6xl">
-          <div className="mb-8 flex flex-wrap items-center gap-2">
-            {["Locality", "Gender", "Sharing Type", "Reset"].map((item) => (
-              <button
-                key={item}
-                className="rounded-full border border-black/10 bg-white px-4 py-2 text-xs text-black/70 transition hover:border-[#bc913c] hover:text-[#bc913c]"
-              >
-                {item}
-              </button>
-            ))}
-          </div>
 
           <h2 className="text-4xl font-light tracking-[0.08em] uppercase sm:text-6xl">
             Our Hostels in Navi Mumbai

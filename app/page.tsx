@@ -1147,7 +1147,7 @@ export default function Home() {
         </div>
 
         <div className="border-t border-white/10 bg-zinc-900 py-4 text-center text-xs text-white/70 sm:text-sm">
-          © Copyright {new Date().getFullYear()} by Reli Nest. Designed By Buzzlink
+          © Copyright {new Date().getFullYear()} by Reli Nest.
           Studios
         </div>
       </footer>
