@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brand-primary: #bc913c;
 }
 
 @theme inline {
@@ -22,5 +23,89 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: auto;
+  min-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.banner-slide {
+  opacity: 0;
+  animation: banner-fade 15s infinite;
+  transform: scale(1.02);
+}
+
+@keyframes banner-fade {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  38% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.city-track {
+  animation: city-slide-right 18s linear infinite;
+}
+
+.city-carousel:hover .city-track {
+  animation-play-state: paused;
+}
+
+@keyframes city-slide-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.available-track {
+  animation: available-slide-left 22s linear infinite;
+}
+
+.available-carousel:hover .available-track {
+  animation-play-state: paused;
+}
+
+@keyframes available-slide-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.review-track {
+  animation: review-slide-left 16s linear infinite;
+}
+
+.review-carousel:hover .review-track {
+  animation-play-state: paused;
+}
+
+@keyframes review-slide-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
